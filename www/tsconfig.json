@@ -1,0 +1,19 @@
+{
+  "extends": "@grikomsn/style-guide/tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": false,
+    "isolatedModules": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "strict": false,
+    "strictNullChecks": true,
+    "types": ["vite/client"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
+}

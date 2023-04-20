@@ -1,0 +1,28 @@
+{
+  "name": "goober-widget",
+  "description": "Simple embeddable widgets using Goober and Preact",
+  "version": "0.0.0",
+  "author": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist/**/*.d.ts",
+    "dist/**/*.js",
+    "dist/**/*.mjs"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint --fix \"src/**/*.ts\"",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "goober": "^2.1.13",
+    "preact": "^10.13.2"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

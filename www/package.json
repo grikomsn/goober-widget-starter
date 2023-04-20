@@ -1,0 +1,17 @@
+{
+  "name": "goober-widget-www",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "goober-widget": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite": "^4.2.2"
+  },
+  "private": true
+}
