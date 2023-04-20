@@ -11,7 +11,7 @@ export const App = () => {
       if (ev.key === "Escape" && ev.shiftKey) setVisible(false);
     };
     const handleOpen = (ev: KeyboardEvent) => {
-      if (ev.key === "Escape") setVisible(true);
+      if (ev.key === "Escape" && !ev.shiftKey) setVisible(true);
     };
     window.addEventListener("keydown", handleClose);
     window.addEventListener("keydown", handleOpen);
